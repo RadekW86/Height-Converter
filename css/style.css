@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+.body {
+    background-color: black;
+    max-width: 1000px;
+    min-width: 600px;
+    margin: 0 auto;
+    overflow-x: auto;
+    font-family: 'Audiowide', cursive;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.header{
+    margin: 40px 15px 25px;
+    padding: 10px;
+    padding-right: 25px;
+    background-color: fuchsia;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    text-align: right;
+}
+
+.main{
+    margin: 25px 15px;    
+    padding: 10px;
+    background-color: fuchsia;
+    border: 3px solid #fff;
+    border-radius: 30px;
+}
+
+.formLabel {
+    display: inline-block;
+    padding: 5px;
+    font-size: 23px;
+    margin: 10px;
+}
+
+.formField {
+    padding: 5px;
+    padding-left: 17px;
+    font-size: 23px;
+    width: 170px;
+    text-align: center;
+}
+
+.formField:read-only {
+    background-color: #eee;
+}
+
+.main__buttonParagraph {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.main_button {
+    width: 200px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.main_button:hover {
+    outline: 3px solid white;
+}
+
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0px 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Lato', sans-serif;
+    border: 3px solid black;
+    border-radius: 30px;
+    
+}
+
+.table__cell {
+    padding: 6px;
+    background-color: #eee;
+}
+
+.table__heading {
+    border-bottom: 1px solid black;
+    font-family: 'Audiowide', cursive;
+    font-size: 17px;
+    font-weight: normal;
+    background-color: violet;
+}
+
+.table__divisionRight {
+    border-right: 1px solid black;
+}
+
+.table--hidden{
+    display: none;
+}
+
+.footer {
+    margin: 25px 15px 40px;
+    padding: 10px;
+    background-color: fuchsia;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+}
