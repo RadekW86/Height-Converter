@@ -1,10 +1,14 @@
 # Height Converter
 
 ## DEMO:
-https://radekw86.github.io/height-converter/
+[click to visit](https://radekw86.github.io/Height-Converter/)
 
-This simple converter lets you convert height given in **feet+inches** to **centimeters** and preview the *conversion table list* as well.
+This simple converter lets you convert height given in **feet+inches** to **centimeters** and preview the *conversion table* as well.
 
-html, CSS & BEM, JS
+## Technologies:
+<ul>
+<li>html</li>
+<li>CSS & BEM</li>
+<li>JS ES6+</li>
 
 ![Preview](images/preview.png)
