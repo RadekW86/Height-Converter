@@ -11,5 +11,6 @@ This simple converter lets you convert height given in **feet+inches** to **cent
 <li>CSS & BEM</li>
 <li>JS ES6+</li>
 </ul>
-  
+
+## Preview:
 ![Preview](images/preview.png)
