@@ -1,154 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
     <title>Height Converter</title>
-    <link rel="icon" href="images/icon.png">
-    <meta property="og:image" content="images/share.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="images/share.png" />
+    <link rel="icon" href="images/icon.png" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/section.css" rel="stylesheet" />
+    <link href="css/content.css" rel="stylesheet" />
     <script defer src="js/script.js"></script>
-</head>
+  </head>
 
-<body class="body">
-    <header class="header">
-        <h1 class="header__h1">Height Converter</h1>
+  <body class="body">
+    <header class="section section--header">
+      <h1 class="headerH1">Height Converter</h1>
     </header>
-    <main class="main">
-        <form class="js-form">
-            <label><span class="formLabel">feet: </span>
-                <input class="formField js-feet" type="number" min="4" max="6" step="1" name="inputFeet" placeholder="4-6" required>
-            </label>
-            <label><span class="formLabel">inches: </span>
-                <input class="formField js-inches" type="number" min="0" max="11" step="1" name="inputInch" placeholder="0-11" required>
-            </label><br>
-            <label><span class="formLabel">centimeters: </span>
-                <input class="formField js-centimeters" type="number" min="122" max="210" step="1" name="output" readonly>
-            </label><br>
-            <button type="submit" class="main_button">ˇˆ Convert ˇˆ</button>
-        </form>
-        <p class="main__buttonParagraph">
-            <button class="main_button button-narrow js-buttonList">ˇˇˇ Show Table ˇˇˇ</button>
-        </p>
-        <table class="table table--hidden">
-            <tr>
-                <th scope="col" class="table__heading table__cell">Imperial</th>
-                <th scope="col" class="table__heading table__cell table__divisionRight">Metric</th>
-                <th scope="col" class="table__heading table__cell">Imperial</th>
-                <th scope="col" class="table__heading table__cell table__divisionRight">Metric</th>
-                <th scope="col" class="table__heading table__cell">Imperial</th>
-                <th scope="col" class="table__heading table__cell">Metric</th>
-            </tr>
-            <tr>
-                <td class="table__cell">4 ft. 0 in.</td>
-                <td class="table__cell table__divisionRight">121,92 cm</td>
-                <td class="table__cell">5 ft. 0 in.</td>
-                <td class="table__cell table__divisionRight">152,40 cm</td>
-                <td class="table__cell">6 ft. 0 in.</td>
-                <td class="table__cell">182,88 cm</td>
-            </tr>
-            <tr>
-                <td class="table__cell">4 ft. 1 in.</td>
-                <td class="table__cell table__divisionRight">124,46 cm</td>
-                <td class="table__cell">5 ft. 1 in.</td>
-                <td class="table__cell table__divisionRight">154,94 cm</td>
-                <td class="table__cell">6 ft. 1 in.</td>
-                <td class="table__cell">185,42 cm</td>
-            </tr>
-            <tr>
-                <td class="table__cell">4 ft. 2 in.</td>
-                <td class="table__cell table__divisionRight">127,00 cm</td>
-                <td class="table__cell">5 ft. 2 in.</td>
-                <td class="table__cell table__divisionRight">157,48 cm</td>
-                <td class="table__cell">6 ft. 2 in.</td>
-                <td class="table__cell">187,96 cm</td>
-            </tr>
-            <tr>
-                <td class="table__cell">4 ft. 3 in.</td>
-                <td class="table__cell table__divisionRight">129,54 cm</td>
-                <td class="table__cell">5 ft. 3 in.</td>
-                <td class="table__cell table__divisionRight">160,20 cm</td>
-                <td class="table__cell">6 ft. 3 in.</td>
-                <td class="table__cell">190,50 cm</td>
-            </tr>
-            <tr>
-                <td class="table__cell">4 ft. 4 in.</td>
-                <td class="table__cell table__divisionRight">132,08 cm</td>
-                <td class="table__cell">5 ft. 4 in.</td>
-                <td class="table__cell table__divisionRight">162,56 cm</td>
-                <td class="table__cell">6 ft. 4 in.</td>
-                <td class="table__cell">193,04 cm</td>
-            </tr>
-            <tr>
-                <td class="table__cell">4 ft. 5 in.</td>
-                <td class="table__cell table__divisionRight">134,62 cm</td>
-                <td class="table__cell">5 ft. 5 in.</td>
-                <td class="table__cell table__divisionRight">165,10 cm</td>
-                <td class="table__cell">6 ft. 5 in.</td>
-                <td class="table__cell">195,58 cm</td>
-            </tr>
-            <tr>
-                <td class="table__cell">4 ft. 6 in.</td>
-                <td class="table__cell table__divisionRight">137,16 cm</td>
-                <td class="table__cell">5 ft. 6 in.</td>
-                <td class="table__cell table__divisionRight">167,74 cm</td>
-                <td class="table__cell">6 ft. 6 in.</td>
-                <td class="table__cell">198,12 cm</td>
-            </tr>
-            <tr>
-                <td class="table__cell">4 ft. 7 in.</td>
-                <td class="table__cell table__divisionRight">139,70 cm</td>
-                <td class="table__cell">5 ft. 7 in.</td>
-                <td class="table__cell table__divisionRight">170,18 cm</td>
-                <td class="table__cell">6 ft. 7 in.</td>
-                <td class="table__cell">200,66 cm</td>
-            </tr>
-            <tr>
-                <td class="table__cell">4 ft. 8 in.</td>
-                <td class="table__cell table__divisionRight">142,24 cm</td>
-                <td class="table__cell">5 ft. 8 in.</td>
-                <td class="table__cell table__divisionRight">172,72 cm</td>
-                <td class="table__cell">6 ft. 8 in.</td>
-                <td class="table__cell">203,20 cm</td>
-            </tr>
-            <tr>
-                <td class="table__cell">4 ft. 9 in.</td>
-                <td class="table__cell table__divisionRight">144,78 cm</td>
-                <td class="table__cell">5 ft. 9 in.</td>
-                <td class="table__cell table__divisionRight">175,26 cm</td>
-                <td class="table__cell">6 ft. 9 in.</td>
-                <td class="table__cell">205,74 cm</td>
-            </tr>
-            <tr>
-                <td class="table__cell">4 ft. 10 in.</td>
-                <td class="table__cell table__divisionRight">147,32 cm</td>
-                <td class="table__cell">5 ft. 10 in.</td>
-                <td class="table__cell table__divisionRight">177,80 cm</td>
-                <td class="table__cell">6 ft. 10 in.</td>
-                <td class="table__cell">208,28 cm</td>
-            </tr>
-            <tr>
-                <td class="table__cell">4 ft. 11 in.</td>
-                <td class="table__cell table__divisionRight">149,86 cm</td>
-                <td class="table__cell">5 ft. 11 in.</td>
-                <td class="table__cell table__divisionRight">180,34 cm</td>
-                <td class="table__cell">6 ft. 11 in.</td>
-                <td class="table__cell">210,82 cm</td>
-            </tr>
-        </table>
+    <main class="section">
+      <form class="form js-form">
+        <div class="form__inputs">
+          <label class="form__label">
+            feet:
+            <input
+              class="form__field js-feet"
+              type="number"
+              min="4"
+              max="6"
+              step="1"
+              name="inputFeet"
+              placeholder="4-6"
+              required
+            />
+          </label>
+          <label class="form__label">
+            inches:
+            <input
+              class="form__field js-inches"
+              type="number"
+              min="0"
+              max="11"
+              step="1"
+              name="inputInch"
+              placeholder="0-11"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label class="form__label">
+            centimeters:
+            <input
+              class="form__field js-centimeters"
+              type="number"
+              min="122"
+              max="210"
+              step="1"
+              name="output"
+              readonly
+            />
+          </label>
+        </div>
+        <div>
+          <button type="submit" class="button">ˇˆ Convert ˇˆ</button>
+        </div>
+      </form>
+      <div class="table__buttonContainer">
+        <button class="button js-buttonList">ˇˇˇ Show Table ˇˇˇ</button>
+      </div>
+      <table class="table table--hidden">
+        <tr>
+          <th scope="col" class="table__heading table__cell">Imperial</th>
+          <th
+            scope="col"
+            class="table__heading table__cell table__divisionRight"
+          >
+            Metric
+          </th>
+          <th scope="col" class="table__heading table__cell">Imperial</th>
+          <th
+            scope="col"
+            class="table__heading table__cell table__divisionRight"
+          >
+            Metric
+          </th>
+          <th scope="col" class="table__heading table__cell">Imperial</th>
+          <th scope="col" class="table__heading table__cell">Metric</th>
+        </tr>
+        <tr>
+          <td class="table__cell">4 ft. 0 in.</td>
+          <td class="table__cell table__divisionRight">121,92 cm</td>
+          <td class="table__cell">5 ft. 0 in.</td>
+          <td class="table__cell table__divisionRight">152,40 cm</td>
+          <td class="table__cell">6 ft. 0 in.</td>
+          <td class="table__cell">182,88 cm</td>
+        </tr>
+        <tr>
+          <td class="table__cell">4 ft. 1 in.</td>
+          <td class="table__cell table__divisionRight">124,46 cm</td>
+          <td class="table__cell">5 ft. 1 in.</td>
+          <td class="table__cell table__divisionRight">154,94 cm</td>
+          <td class="table__cell">6 ft. 1 in.</td>
+          <td class="table__cell">185,42 cm</td>
+        </tr>
+        <tr>
+          <td class="table__cell">4 ft. 2 in.</td>
+          <td class="table__cell table__divisionRight">127,00 cm</td>
+          <td class="table__cell">5 ft. 2 in.</td>
+          <td class="table__cell table__divisionRight">157,48 cm</td>
+          <td class="table__cell">6 ft. 2 in.</td>
+          <td class="table__cell">187,96 cm</td>
+        </tr>
+        <tr>
+          <td class="table__cell">4 ft. 3 in.</td>
+          <td class="table__cell table__divisionRight">129,54 cm</td>
+          <td class="table__cell">5 ft. 3 in.</td>
+          <td class="table__cell table__divisionRight">160,20 cm</td>
+          <td class="table__cell">6 ft. 3 in.</td>
+          <td class="table__cell">190,50 cm</td>
+        </tr>
+        <tr>
+          <td class="table__cell">4 ft. 4 in.</td>
+          <td class="table__cell table__divisionRight">132,08 cm</td>
+          <td class="table__cell">5 ft. 4 in.</td>
+          <td class="table__cell table__divisionRight">162,56 cm</td>
+          <td class="table__cell">6 ft. 4 in.</td>
+          <td class="table__cell">193,04 cm</td>
+        </tr>
+        <tr>
+          <td class="table__cell">4 ft. 5 in.</td>
+          <td class="table__cell table__divisionRight">134,62 cm</td>
+          <td class="table__cell">5 ft. 5 in.</td>
+          <td class="table__cell table__divisionRight">165,10 cm</td>
+          <td class="table__cell">6 ft. 5 in.</td>
+          <td class="table__cell">195,58 cm</td>
+        </tr>
+        <tr>
+          <td class="table__cell">4 ft. 6 in.</td>
+          <td class="table__cell table__divisionRight">137,16 cm</td>
+          <td class="table__cell">5 ft. 6 in.</td>
+          <td class="table__cell table__divisionRight">167,74 cm</td>
+          <td class="table__cell">6 ft. 6 in.</td>
+          <td class="table__cell">198,12 cm</td>
+        </tr>
+        <tr>
+          <td class="table__cell">4 ft. 7 in.</td>
+          <td class="table__cell table__divisionRight">139,70 cm</td>
+          <td class="table__cell">5 ft. 7 in.</td>
+          <td class="table__cell table__divisionRight">170,18 cm</td>
+          <td class="table__cell">6 ft. 7 in.</td>
+          <td class="table__cell">200,66 cm</td>
+        </tr>
+        <tr>
+          <td class="table__cell">4 ft. 8 in.</td>
+          <td class="table__cell table__divisionRight">142,24 cm</td>
+          <td class="table__cell">5 ft. 8 in.</td>
+          <td class="table__cell table__divisionRight">172,72 cm</td>
+          <td class="table__cell">6 ft. 8 in.</td>
+          <td class="table__cell">203,20 cm</td>
+        </tr>
+        <tr>
+          <td class="table__cell">4 ft. 9 in.</td>
+          <td class="table__cell table__divisionRight">144,78 cm</td>
+          <td class="table__cell">5 ft. 9 in.</td>
+          <td class="table__cell table__divisionRight">175,26 cm</td>
+          <td class="table__cell">6 ft. 9 in.</td>
+          <td class="table__cell">205,74 cm</td>
+        </tr>
+        <tr>
+          <td class="table__cell">4 ft. 10 in.</td>
+          <td class="table__cell table__divisionRight">147,32 cm</td>
+          <td class="table__cell">5 ft. 10 in.</td>
+          <td class="table__cell table__divisionRight">177,80 cm</td>
+          <td class="table__cell">6 ft. 10 in.</td>
+          <td class="table__cell">208,28 cm</td>
+        </tr>
+        <tr>
+          <td class="table__cell">4 ft. 11 in.</td>
+          <td class="table__cell table__divisionRight">149,86 cm</td>
+          <td class="table__cell">5 ft. 11 in.</td>
+          <td class="table__cell table__divisionRight">180,34 cm</td>
+          <td class="table__cell">6 ft. 11 in.</td>
+          <td class="table__cell">210,82 cm</td>
+        </tr>
+      </table>
     </main>
-    <footer class="footer">
-        © 2022 - copyright Radosław Włodarski
+    <footer class="section section--footer">
+      © 2023 - copyright Radosław Włodarski
     </footer>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,19 @@
+.section {
+    background-color: fuchsia;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    margin: 0 15px;
+    padding: 20px 15px;
+}
+
+.section--header {
+    text-align: right;
+}
+
+.section--footer {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+}

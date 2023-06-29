@@ -1,0 +1,82 @@
+.headerH1 {
+    margin: 10px 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form__inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form__label {
+    padding: 5px;
+    font-size: 23px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form__field {
+    padding-left: 17px;
+    width: 170px;
+    text-align: center;
+}
+
+.form__field:read-only {
+    background-color: #eee;
+}
+
+.button {
+    width: 200px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.button:hover {
+    outline: 3px solid white;
+}
+
+.table__buttonContainer {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0px 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Lato', sans-serif;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+.table__cell {
+    padding: 6px;
+    background-color: #eee;
+}
+
+.table__heading {
+    border-bottom: 1px solid black;
+    font-family: 'Audiowide';
+    font-size: 17px;
+    font-weight: normal;
+    background-color: violet;
+}
+
+.table__divisionRight {
+    border-right: 1px solid black;
+}
+
+.table--hidden {
+    display: none;
+}
